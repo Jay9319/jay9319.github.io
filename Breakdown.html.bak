@@ -1,5 +1,16 @@
-<html style="     width:400px;height:800px;align-items: center;margin-left: 50%;margin: auto;">
+<html style="         width:400px;height:800px;align-items: center;margin-left: 50%;margin: auto;">
   <head>
+    <style>
+      button {background-color: #009845;
+  						border: none;
+  						color: white;
+  						padding: 15px 32px;
+  						text-align: center;
+  						text-decoration: none;
+  						display: inline-block;
+  						font-size: 16px;
+              padding: 0px;}
+    </style>
     <meta http-equiv="content-type" content="text/html; charset=windows-1252">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" sizes="192x192" href="https://raw.githubusercontent.com/Jay9319/jay9319.github.io/main/favicon.bmp">
@@ -61,10 +72,10 @@ function login() {
 </script> </head>
   <body>
     <div id="Buttons" style="display:flex;justify-content: center; align-items: center; text-align:center;">
-      <button id="button" style="height: 20px; width: 85px; margin-top: 0px;">Wellness</button>
-      <button id="button2" style="width: 85px; margin-left: 5px; margin-top: 0px; height: 20px; padding: 0px">Relationships</button>
-      <button id="button3" style="width: 85px; margin-left: 5px; margin-top: 0px; height: 20px;">Mental</button>
-      <button id="button4" style="width: 85px; margin-left: 5px; margin-top: 0px; height: 20px;">Health</button>
+      <button id="button" style="height: 20px; width: 95px; margin-top: 0px;">Wellness</button>
+      <button id="button2" style="width: 95px; margin-left: 5px; margin-top: 0px; height: 20px; ">Relationships</button>
+      <button id="button3" style="width: 95px; margin-left: 5px; margin-top: 0px; height: 20px;">Mental</button>
+      <button id="button4" style="width: 95px; margin-left: 5px; margin-top: 0px; height: 20px;">Health</button>
     </div>
     <div id="iframeHolder" style="height:100%;width:100%;margin: auto; max-width: 350px;max-height: 750px; display:flex;justify-content: center; align-items: center; text-align:center;"></div>
     
