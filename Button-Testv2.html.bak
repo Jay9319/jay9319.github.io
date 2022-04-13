@@ -1,0 +1,68 @@
+<html style=" width:100%;height:100%">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+$(function(){
+    $('#button').click(function(){ 
+        if(!$('#iframe').length) {
+                $('#iframeHolder').html('<iframe src="https://paragonshift1.us.qlikcloud.com/single/?appid=187d1a59-2240-4e1c-b897-40109db96734&sheet=2ed7a81b-a4eb-4df4-aefa-96371e5c1279&theme=breeze&opt=nointeraction,noselections" style="border:none;width:100%;height:100%;"></iframe>');
+        }
+    });   
+});
+$(function(){
+    $('#button2').click(function(){ 
+        if(!$('#iframe').length) {
+                $('#iframeHolder').html('<iframe src="https://paragonshift1.us.qlikcloud.com/single/?appid=187d1a59-2240-4e1c-b897-40109db96734&sheet=da22b21f-91f0-492a-a884-7cb3bef6a7fc&theme=breeze&opt=nointeraction,noselections" style="border:none;width:100%;height:100%;"></iframe>');
+        }
+    });   
+});
+$(function(){
+    $('#button3').click(function(){ 
+        if(!$('#iframe').length) {
+                $('#iframeHolder').html('<iframe src="https://paragonshift1.us.qlikcloud.com/single/?appid=187d1a59-2240-4e1c-b897-40109db96734&sheet=5fe7b683-880f-427b-b1a6-60dc242a1e8b&theme=breeze&opt=nointeraction,noselections" style="border:none;width:100%;height:100%;"></iframe>');
+        }
+    });   
+});
+$(function(){
+    $('#button4').click(function(){ 
+        if(!$('#iframe').length) {
+                $('#iframeHolder').html('<iframe src="https://paragonshift1.us.qlikcloud.com/single/?appid=187d1a59-2240-4e1c-b897-40109db96734&sheet=51f50234-c9a8-4db8-9714-e4d7744c8802&theme=breeze&opt=nointeraction,noselections" style="border:none;width:100%;height:100%;"></iframe>');
+        }
+    });   
+});
+const webIntegrationId = "J3FAdlz1jPtkt1gLnAOoICYFxoPvXn3f";
+function login() {
+    function isLoggedIn() {
+        return fetch("https://paragonshift1.us.qlikcloud.com/api/v1/users/me", {
+          method: 'GET',
+          mode: 'cors',
+          credentials: 'include',
+          headers: {
+            'Content-Type': 'application/json',
+            'qlik-web-integration-id': webIntegrationId,
+          },
+        }).then(response => {
+          return response.status === 200;
+        });
+      }
+      return isLoggedIn().then(loggedIn => {
+        if (!loggedIn) {
+          // check login
+            window.location.href = "https://paragonshift1.us.qlikcloud.com/login?qlik-web-integration-id=" + webIntegrationId + "&returnto=" + location.href;
+          throw new Error('not logged in');
+        }
+      });
+    }
+	login()
+</script> </head>
+  <body style=" width:100%;height:100%">
+    <div id="Buttons" style="display:flex;justify-content: center; align-items: center; text-align:center;">
+      <button id="button" style="height: 20px; width: 85px; margin-top: 0px;">Wellness</button>
+      <button id="button2" style="width: 85px; margin-left: 5px; margin-top: 0px; height: 20px; padding: 0px">Relationships</button>
+      <button id="button3" style="width: 85px; margin-left: 5px; margin-top: 0px; height: 20px;">Mental</button>
+      <button id="button3" style="width: 85px; margin-left: 5px; margin-top: 0px; height: 20px;">Health</button>
+    </div>
+    <div id="iframeHolder" style="height:100%;width:100%;margin: auto; max-width: 350px;max-height: 750px"></div>
+  </body>
+</html>
