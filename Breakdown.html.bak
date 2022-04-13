@@ -1,6 +1,8 @@
 <html style=" width:100%;height:100%">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="icon" sizes="192x192" href="https://raw.githubusercontent.com/Jay9319/jay9319.github.io/main/favicon.bmp">
+    <title>Wellness Score</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
     <script type="text/javascript">
 $(function(){
